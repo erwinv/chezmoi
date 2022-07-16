@@ -1,0 +1,28 @@
+[erwinvillejo]
+type = drive
+client_id = {{ pass "googledrive/erwinvillejo/clientid" }}
+client_secret = {{ pass "googledrive/erwinvillejo/clientsecret" }}
+scope = drive
+token = 
+team_drive = 
+
+[linodeap]
+type = s3
+provider = Other
+access_key_id = {{ pass "s3/linodeap/accesskeyid" }}
+secret_access_key = {{ pass "s3/linodeap/secretaccesskey" }}
+region = ap-south
+endpoint = ap-south-1.linodeobjects.com
+acl = private
+force_path_style = false
+
+[linodeeu]
+type = s3
+provider = Other
+access_key_id = {{ pass "s3/linodeeu/accesskeyid" }}
+secret_access_key = {{ pass "s3/linodeeu/secretaccesskey" }}
+region = eu-central
+endpoint = eu-central-1.linodeobjects.com
+acl = private
+force_path_style = false
+
